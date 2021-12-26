@@ -49,35 +49,15 @@ const Navbar = () => {
                       Contact
                     </Link>
                   </li>
-                  <li
-                    className="nav-item dropdown"
-                    style={{ marginRight: "5px" }}
-                  >
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Tour Packages
-                    </a>
-                    <ul
-                      className="dropdown-menu"
-                      aria-labelledby="navbarDropdown"
-                    >
-                      <li>
-                        <Link className="dropdown-item" to="/domestic">
-                          Domestic
-                        </Link>
-                      </li>
-                      <li>
-                        <Link className="dropdown-item" to="/international">
-                          International
-                        </Link>
-                      </li>
-                    </ul>
+                  <li className="nav-item" style={{ marginRight: "5px" }}>
+                    <Link className="nav-link" to="/packages">
+                      User Reviews
+                    </Link>
+                  </li>
+                  <li className="nav-item" style={{ marginRight: "5px" }}>
+                    <Link className="nav-link" to="/reviews">
+                      Add Review
+                    </Link>
                   </li>
                 </ul>
               </div>

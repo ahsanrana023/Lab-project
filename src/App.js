@@ -9,6 +9,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Not from "./components/Not";
 import Navbar from "./components/Navbar";
 import International from "./components/International";
+import Reviews from "./components/Reviews";
+import Package from "./components/Package";
+import EditReview from "./components/EditReview";
 function App() {
   return (
     <Router>
@@ -18,8 +21,9 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/service" element={<Service />} />
-        <Route path="/domestic" element={<Domestic />} />
-        <Route path="/international" element={<International />} />
+        <Route path="/packages" element={<Package />} />
+        <Route path="/reviews" element={<Reviews />} />
+        <Route path="/edit/:id" element={<EditReview />} />
         <Route path="*" element={<Not />} />
       </Routes>
     </Router>
